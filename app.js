@@ -30,7 +30,7 @@ app.set("view engine", "ejs");
 app.use("/",index)
 app.use("/owners", ownersRouter);
 app.use("/users", usersRouter);
-app.use("/products", productsRouter);
+app.use("/product", productsRouter);
 
 app.listen(3000, () => {
   console.log("Server is running on port 3000");

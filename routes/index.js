@@ -3,7 +3,7 @@ const router = express.Router();
 const isLoggedIn = require("../middlewares/isLoggedIn.js");
 
 router.get("/", (req, res) => {
-  const error = req.flash("error");
+  let error = req.flash("error");
   res.render("index", { error });
 });
 

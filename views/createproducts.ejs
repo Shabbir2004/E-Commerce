@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <%- include('./partials/header') %> <% if(success.length>0){ %>
@@ -26,7 +27,7 @@
           <h2 class="text-xl font-bold mb-4">Create New Product</h2>
           <form
             autocomplete="off"
-            action="/products/create"
+            action="/product/create"
             method="post"
             enctype="multipart/form-data"
           >
